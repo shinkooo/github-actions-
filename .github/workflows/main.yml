@@ -1,1 +1,12 @@
+name: public-atmify
+on:
+  pull_request:
+    branches:
+    - develop
+    types: [closed]
+  workflow_dispatch:
 
+jobs:
+  steps:
+    - name: public-atmify
+      run: echo Hello, world
